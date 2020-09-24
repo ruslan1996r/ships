@@ -1,1 +1,3 @@
-<h2>For start: npm i + nodemon </h2>
+<h2>For start:</h2>
+<h4>npm i</h4>
+<h4>nodemon</h4>
