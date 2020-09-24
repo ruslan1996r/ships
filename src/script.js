@@ -95,7 +95,7 @@ class Ship {
             .to({
                 x: pier.coordsForShip.x - this.coords.x,
                 y: pier.coordsForShip.y
-            }, 500)
+            }, 1000)
             .onUpdate(this.update.bind(this))
             .onComplete(() => {
                 pier.updateFilled = this.filled
@@ -105,7 +105,7 @@ class Ship {
             y: pier.coordsForShip.y
         })
             .to({ x: 0, y: 0 }, 1000)
-            .delay(500)
+            .delay(5000)
             .onStart(this.onStart.bind(this))
             .onUpdate(this.onUpdate.bind(this))
             .onComplete(() => {
@@ -167,6 +167,6 @@ function generateShip(startedNumber) {
 generateShip(1)
 setInterval(() => {
     generateShip()
-}, 2000)
+}, 8000)
 
 window.generate = generateShip
